@@ -1,6 +1,6 @@
 {
   "name": "test-with-data-folder",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Utility to handle tests involving test data folders.",
   "main": "index.js",
   "scripts": {
