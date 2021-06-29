@@ -6,7 +6,7 @@ test('test case 1', () => {
   const expectedFolder = "./tests/test-case-1/expected";
   const temporaryFolder = "./tests/test-case-1/temp";
 
-  const func = () => { testCase1Func(temporaryFolder); };
+  const testFunction = () => { testCase1Func(temporaryFolder); };
 
-  testWithDataFolder(func, inputFolder, expectedFolder, temporaryFolder );
+  testWithDataFolder(testFunction, inputFolder, expectedFolder, temporaryFolder);
 });
