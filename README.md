@@ -21,7 +21,7 @@ the expected data, and clean up afterwards.
       const expectedFolder = "./tests/test-case-1/expected";
       const temporaryFolder = "./tests/test-case-1/temp";
 
-      // Define the function under test (not required if it takes no arguments)
+      // Define the function under test
       const testFunction = () => { testCase1Func(temporaryFolder); };
 
       // Run the test
