@@ -12,7 +12,7 @@ the expected data, and clean up afterwards.
 
 ## Example
 
-    const { testWithDataFolder } = require("../testWithDataFolder");
+    const { testWithDataFolder } = require("test-with-data-folder");
     const { testCase1Func } = require("./test-case-1/testCase1Func"); // Function under test
 
     test('test case 1', () => {

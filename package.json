@@ -2,9 +2,9 @@
   "name": "test-with-data-folder",
   "version": "0.0.3",
   "description": "Utility to handle tests involving test data folders.",
-  "main": "index.js",
+  "main": "testWithDataFolder.js",
   "scripts": {
-    "release": "yarn test && npm whoami && yarn install --production --force && npm version patch && npm publish && yarn install",
+    "release": "yarn test && npm whoami && yarn install --production --force && npm version patch && npm publish && yarn install && git push",
     "test": "jest"
   },
   "repository": {
