@@ -4,11 +4,8 @@ Utility to handle tests involving test data folders.
 
 ## Usage
 
-You have an input data folder and an expected data folder and a test function that modifies the
-data. This package helps automate your test.
-
-It will automatically make a copy of the input data, do the comparison of the actual data against
-the expected data, and clean up afterwards.
+It will automatically make a copy of the input data, run the function under test, compare the actual
+data against the expected data, and clean up afterwards.
 
 ## Example
 
