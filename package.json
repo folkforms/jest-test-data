@@ -1,0 +1,27 @@
+{
+  "name": "test-with-data-folder",
+  "version": "0.0.0",
+  "description": "Utility to handle tests involving test data folders.",
+  "main": "index.js",
+  "scripts": {
+    "release": "yarn test && npm whoami && yarn install --production --force && npm version patch && npm publish --access=public && yarn install",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/folkforms/test-with-data-folder.git"
+  },
+  "author": "Alan Bergin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/folkforms/test-with-data-folder/issues"
+  },
+  "homepage": "https://github.com/folkforms/test-with-data-folder#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
+  "dependencies": {
+    "@folkforms/file-io": "^0.2.2",
+    "shelljs": "^0.8.4"
+  }
+}
