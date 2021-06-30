@@ -1,11 +1,6 @@
 # test-with-data-folder
 
-Utility to handle tests involving test data folders.
-
-## Usage
-
-It will automatically make a copy of the input data, run the function under test, compare the actual
-data against the expected data, and clean up afterwards.
+Take a test data folder and automatically copy, modify, compare against expected data, and remove.
 
 ## Example
 
