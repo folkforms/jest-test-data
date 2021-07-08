@@ -45,4 +45,4 @@ const testWithDataFolder = (testFunction, inputFolder, expectedFolder, temporary
   shelljs.rm("-rf", temporaryFolder);
 }
 
-module.exports = { testWithDataFolder };
+module.exports = testWithDataFolder;

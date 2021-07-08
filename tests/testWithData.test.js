@@ -1,4 +1,4 @@
-const { testWithDataFolder } = require("../testWithDataFolder");
+const testWithDataFolder = require("../testWithDataFolder");
 const { testCase1Func } = require("./test-case-1/testCase1Func");
 
 test('test case 1', () => {
