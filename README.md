@@ -4,7 +4,7 @@ Take a test data folder and automatically copy, modify, compare against expected
 
 ## Example
 
-    const { testWithDataFolder } = require("test-with-data-folder");
+    const testWithDataFolder = require("test-with-data-folder");
     const { testCase1Func } = require("./test-case-1/testCase1Func"); // Function under test
 
     test('test case 1', () => {
