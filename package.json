@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/folkforms/test-with-data-folder#readme",
   "devDependencies": {
+    "fs-extra": "^10.0.0",
     "jest": "^27.0.6"
   },
   "dependencies": {
