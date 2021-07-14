@@ -311,6 +311,16 @@
     fs-extra "^9.1.0"
     jest "^27.0.4"
 
+"@folkforms/npm-release@^0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@folkforms/npm-release/-/npm-release-0.0.18.tgz#85c6ffe8588e064d591837fb4d5e5360a9be3313"
+  integrity sha512-S0omIuva7w3dyjPE1MGMUUMcPxqkQt/lzonPika0j6YSG4cJp4Fboyhrn80TBG1IzEAEvQO+tUa00oT7lzpk7w==
+  dependencies:
+    "@folkforms/file-io" "^0.2.2"
+    commander "^8.0.0"
+    dummy-shells "^0.0.3"
+    shelljs "^0.8.4"
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -929,6 +939,11 @@ combined-stream@^1.0.8:
   dependencies:
     delayed-stream "~1.0.0"
 
+commander@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-8.0.0.tgz#1da2139548caef59bd23e66d18908dfb54b02258"
+  integrity sha512-Xvf85aAtu6v22+E5hfVoLHqyul/jyxh91zvqk/ioJTQuJR7Z78n7H558vMPKanPSRgIEeZemT92I2g9Y8LPbSQ==
+
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
@@ -1024,6 +1039,11 @@ domexception@^2.0.1:
   integrity sha512-yxJ2mFy/sibVQlu5qHjOkf9J3K6zgmCxgJ94u2EdvDOV09H+32LtRswEcUsmUWN72pVLOEnTSRaIVVzVQgS0dg==
   dependencies:
     webidl-conversions "^5.0.0"
+
+dummy-shells@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/dummy-shells/-/dummy-shells-0.0.3.tgz#8a46da483c7103a6a4b2c2df91264306c9a43549"
+  integrity sha512-EEH5G9EnP5JaM9G+0ERXRSU176uMMagTnDhugamLc2Xd1z89sXASzbwkvZvgAy2tT9fUIIc5NwCv+8IrvTmDUw==
 
 electron-to-chromium@^1.3.723:
   version "1.3.761"
