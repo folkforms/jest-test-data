@@ -30,12 +30,12 @@ const testWithDataFolder = (testFunction, inputFolder, expectedFolder, temporary
   const actualFiles = fileio.glob(`${temporaryFolder}/**`);
   const expectedFiles = fileio.glob(`${expectedFolder}/**`);
 
-  // ...Check number of files
-  expect(actualFiles.length).toEqual(expectedFiles.length);
-
   // ...Check file lists
   const modActualFiles = actualFiles.map(file => file.replace(temporaryFolder, expectedFolder));
   expect(modActualFiles).toEqual(expectedFiles);
+
+  // ...Check number of files
+  expect(actualFiles.length).toEqual(expectedFiles.length);
 
   // ...Check file contents
   for(let i = 0; i < actualFiles.length; i++) {
