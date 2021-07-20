@@ -16,8 +16,8 @@ test('input folder can be empty', () => {
   const inputFolder = "./tests/test-case-2/input";
   const expectedFolder = "./tests/test-case-2/expected";
   const temporaryFolder = "./tests/test-case-2/temp";
-  fs.remove(inputFolder);
-  fs.remove(expectedFolder);
+  fs.removeSync(inputFolder);
+  fs.removeSync(expectedFolder);
   fs.mkdirSync(inputFolder);
   fs.mkdirSync(expectedFolder);
 
