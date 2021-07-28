@@ -3,19 +3,23 @@ const fileio = require("@folkforms/file-io");
 
 /**
  * Utility class for handling tests that involve test data folders. Copies `inputFolder` to
- * `temporaryFolder`, runs the given test function, then compares `temporaryFolder` with
- * `expectedFolder`.
+ * `temporaryFolder`, runs `testFunction`, then compares `temporaryFolder` with `expectedFolder`.
  *
- * `testFunction` is executed with no arguments. If you need arguments you can pass it wrapped in an
- * anonymous function like `() => { testFunction(temporaryFolder); }`.
+ * It is expected (though not strictly necessary) that `testFunction` will perform work on the files
+ * in `temporaryFolder`. This result will then be compared against `expectedFolder`.
  *
+ * `temporaryFolder` will be wiped, so be careful.
+ *
+ * `testFunction` is executed with no arguments. If you need arguments you can wrap it in an
+ * anonymous function e.g. `() => { testFunction(args); }`.
+ *
+ * @param {object} testFunction function under test
  * @param {string} inputFolder folder containing input test data
  * @param {string} expectedFolder folder containing expected test data
  * @param {string} temporaryFolder temporary folder location
- * @param {string} testFunction function under test
  */
 const testWithDataFolder = (testFunction, inputFolder, expectedFolder, temporaryFolder) => {
-  // Make a copy of input folder in temporary folder
+  // Make a copy of input folder as temporary folder
   shelljs.rm("-rf", temporaryFolder);
   shelljs.mkdir("-p", temporaryFolder);
   const files = shelljs.ls("-A", inputFolder);
@@ -23,7 +27,7 @@ const testWithDataFolder = (testFunction, inputFolder, expectedFolder, temporary
     shelljs.cp("-r", `${inputFolder}/*`, temporaryFolder);
   }
 
-  // Run the given test function
+  // Run the test function
   testFunction();
 
   // Compare temporary folder with expected folder
