@@ -22,7 +22,7 @@ const testWithDataFolder = (testFunction, inputFolder, expectedFolder, temporary
   // Make a copy of input folder as temporary folder
   shelljs.rm("-rf", temporaryFolder);
   shelljs.mkdir("-p", temporaryFolder);
-  const files = shelljs.ls("-A", inputFolder);
+  const files = shelljs.ls(inputFolder);
   if(files.length > 0) {
     shelljs.cp("-r", `${inputFolder}/*`, temporaryFolder);
   }
